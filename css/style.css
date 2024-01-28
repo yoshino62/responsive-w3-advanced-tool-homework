@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 100px;
+  margin: 100px 0;
 }
 
 h1,
@@ -52,6 +52,10 @@ p {
   padding: 20px 15px;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -87,12 +91,32 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  h1 {
+    font-size: 38px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
   p {
     text-align: center;
   }
 
-  img {
-    display: none;
+  .primary-link {
+    text-align: center;
+  }
+
+  .secondary-link {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
